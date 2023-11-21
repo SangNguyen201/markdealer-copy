@@ -367,6 +367,7 @@ function gia_san_pham() {?>
 // Hinh thuc
 function hinh_thuc_san_pham() {?>
 <div class="hinh-thuc flex">
+   <?php global $post;?>
    <?php 
       $terms = get_the_terms( $post->ID , 'hinh-thuc' );
       if ( $terms != null) {
@@ -692,6 +693,7 @@ function sp_noi_bat() {?>
    <?php } ?>
    <!-- Nhan hieu noi bat -->
    <section id="widget_sp_noi_bat">
+      <?php global $product_id ;?>
       <h4>Nhãn hiệu nổi bật</h4>
       <ul>
          <?php

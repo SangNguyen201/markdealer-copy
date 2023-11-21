@@ -129,6 +129,7 @@ get_header();
 
 <!-- Section 3 -->
 <section id="section-3" class="section">
+   <?php global $product_id ;?>
    <div class="container">
       <h2>Dành cho bạn</h2>
       <hr>

@@ -1125,6 +1125,7 @@ body.single-post main.content img {
 body h1.entry-title {
    margin-top: 0;
    font-size: 25px;
+   text-align: center;
 }
 
 .entry-content:not(body.category-dich-vu main.content .entry-content),
