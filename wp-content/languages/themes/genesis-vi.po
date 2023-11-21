@@ -1,0 +1,1350 @@
+# Translation of Genesis Framework - Genesis 3.3 in Vietnamese
+# This file is distributed under the same license as the Genesis Framework - Genesis 3.3 package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-03-21 17:11:10+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/2.3.1\n"
+"Language: vi_VN\n"
+"Project-Id-Version: Genesis Framework - Genesis 3.3\n"
+
+#: lib/structure/post.php:1041
+msgid "<span class=\"screen-reader-text\">Go to</span> Next Page"
+msgstr "<span class=\"screen-reader-text\">Chuyển đến</span> Trang sau"
+
+#: lib/structure/post.php:979
+msgid "<span class=\"screen-reader-text\">Go to</span> Previous Page"
+msgstr "<span class=\"screen-reader-text\">Chuyển đến</span> Trang trước"
+
+#: lib/structure/post.php:963
+msgid "Pagination"
+msgstr "Phân trang"
+
+#: lib/structure/post.php:973
+msgid "Go to page"
+msgstr "Chuyển tới trang"
+
+#: lib/classes/SEO/Open_Graph.php:79
+msgid "Select an image to use on social sites if no featured image is set."
+msgstr "Chọn một hình ảnh để hiển thị trên các trang mạng xã hội nếu không có hình ảnh nổi bật nào được sử dụng."
+
+#: lib/classes/SEO/Open_Graph.php:78
+msgid "Default Image"
+msgstr "Hỉnh ảnh mặc định"
+
+#: config/customizer-theme-settings.php:240
+msgid "Entry Meta (below content)"
+msgstr "Entry Meta (bên dưới nội dung)"
+
+#: config/customizer-theme-settings.php:230
+msgid "Entry Meta (above content)"
+msgstr "Entry Meta (phía trên nội dung)"
+
+#: config/customizer-theme-settings.php:46
+msgid "If you provide an email address below, you will be notified via email when a new version of Genesis is available. Your email address is not sent to us."
+msgstr "Nếu bạn cung cấp địa chỉ email vào ô bên dưới, bạn sẽ được thông báo qua email khi có phiên bản Genesis mới. Và chúng tôi chắc chắn rằng địa chỉ email của bạn sẽ không được gửi cho chúng tôi."
+
+#. translators: %s: Link to privacy policy
+#: config/customizer-theme-settings.php:37
+msgid "By checking this box, you allow Genesis to periodically check for updates. Update requests send information about your site including software and theme data, as well as the site’s URL and locale. See the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">privacy policy</a>."
+msgstr "Bằng cách chọn hộp này, bạn sẽ cho phép Genesis kiểm tra cập nhật định kỳ. Yêu cầu cập nhật gửi thông tin về trang web của bạn, bao gồm phần mềm và dữ liệu giao diện, cũng như địa điểm và địa chỉ của trang web. Vui lòng xem <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">chính sách bảo mật</a>."
+
+#: lib/structure/footer.php:209
+msgid "This filter is no longer supported. You can now modify your footer text using the Theme Settings."
+msgstr "Bộ lọc này hiện nay không còn được hỗ trợ. Giờ đây bạn có thể chỉnh sửa văn bản dưới Footer trong phần Cài đặt giao diện."
+
+#: lib/structure/comments.php:174
+msgid "Trackbacks"
+msgstr "Phản hồi"
+
+#: lib/views/onboarding/starter-pack-summary.php:25
+msgid "Pack Details"
+msgstr "Chi tiết gói"
+
+#. translators: the post type label.
+#: lib/admin/customizer.php:181
+msgid "Show Featured Images on %s"
+msgstr "Hiển thị hình ảnh nổi bật trên %s"
+
+#: config/customizer-theme-settings.php:324
+msgid "Footer"
+msgstr "Footer"
+
+#: config/customizer-theme-settings.php:225
+msgid "Singular Content"
+msgstr "Bài viết riêng lẻ"
+
+#. translators: 1: Genesis version, 2: Changelog URI.
+#: lib/views/pages/genesis-admin-upgraded.php:32
+msgid "Congratulations for successfully updating to Genesis %1$s. We keep a <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">detailed changelog</a> for each release. Feel free to take a look!"
+msgstr "Xin chúc mừng vì đã cập nhật Genesis %1$s. Chúng tôi có bảnWe keep a <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">chi tiết thay đổi</a> cho mỗi bản phát hành mới. Hãy xem nó!"
+
+#: lib/classes/class-genesis-menu-handler.php:87
+msgid "Menu"
+msgstr "Menu"
+
+#: lib/classes/class-genesis-amp-menu.php:404
+#: lib/classes/class-genesis-menu-handler.php:90
+msgid "Submenu"
+msgstr "Submenu"
+
+#: lib/admin/site-health.php:98
+msgid "This theme uses theme supports that are no longer required in Genesis 3.0+: "
+msgstr "Giao diện này sử dụng các hỗ trợ giao diện không cần thiết ở phiên bản Genesis 3.0+:"
+
+#: lib/admin/site-health.php:94
+msgid "\"404-page\" no longer required in \"genesis-accessibility\" theme support array"
+msgstr "\"404-page\" không cần thiết trong hàm giao diện hỗ trợ \"genesis-accessibility\""
+
+#: lib/admin/site-health.php:62
+msgid "Genesis recommendations"
+msgstr "Khuyến nghị từ Genesis"
+
+#: lib/views/pages/genesis-admin-onboarding.php:93
+msgid "This will change your default homepage."
+msgstr "Hành động này sẽ thay đổi trang chủ mặc định của bạn."
+
+#: lib/views/pages/genesis-admin-onboarding.php:90
+msgid "Sample content for the theme will be added to make your theme look like the demo."
+msgstr "Nội dung mẫu cho giao diện sẽ được thêm vào để làm cho giao diện của bạn trông giống như bản demo."
+
+#: lib/views/pages/genesis-admin-onboarding.php:65
+msgid "The following plugins will be automatically installed and activated with this theme (links open in new window):"
+msgstr "Các plugin sau sẽ tự động cài đặt và kích hoạt với giao diện này (liên kết mở trong cửa sổ mới):"
+
+#. translators: %s: Path to local image file.
+#: lib/functions/onboarding.php:578
+msgid "Could not read the file: %s."
+msgstr "Không thể đọc tập tin: %s."
+
+#: lib/functions/onboarding.php:127
+msgid "new window"
+msgstr "cửa sổ mới"
+
+#: lib/classes/class-genesis-cli-settings-command.php:95
+msgid "It appears something went wrong. Please check your command and try again."
+msgstr "Có gì đó không ổn. Vui lòng kiểm tra câu lệnh và thử lại."
+
+#: lib/classes/class-genesis-cli-settings-command.php:91
+msgid "Setting saved."
+msgstr "Đã lưu cài đặt."
+
+#: lib/classes/class-genesis-admin-plugins.php:32
+#: lib/classes/class-genesis-admin-plugins.php:33
+msgid "Genesis Plugins"
+msgstr "Genesis Plugins"
+
+#: lib/views/pages/genesis-admin-onboarding.php:43
+msgid "Set up your website"
+msgstr "Thiết lập trang web của bạn."
+
+#: lib/views/pages/genesis-admin-onboarding.php:36
+msgid "Use the \"Set Up Your Website\" button to get started. None of your existing content will be lost."
+msgstr "Sử dụng nút \"Thiết lập trang web của bạn\" để bắt đầu. Nội dung hiện tại sẽ không bị mất."
+
+#. translators: %s: Theme name
+#: lib/views/pages/genesis-admin-onboarding.php:31
+msgid "%s supports automatic set up and import of demo content and/or recommended plugins."
+msgstr "%s hỗ trợ tự động thiết lập và nhập nội dung demo và/hoặc các plugin được đề xuất."
+
+#. translators: %s: Theme name
+#: lib/views/pages/genesis-admin-onboarding-packs.php:22
+#: lib/views/pages/genesis-admin-onboarding.php:25
+msgid "Get started with %s."
+msgstr "Bắt đầu với %s."
+
+#: lib/structure/sidebar.php:75
+msgid "Widgets Panel"
+msgstr "Bảng điều khiển Widgets"
+
+#. translators: 1: Widget name, 2: URL to widgets admin page.
+#: lib/structure/sidebar.php:70
+msgid "This is the %1$s. You can add content to this area by visiting your %2$s and adding new widgets to this area."
+msgstr "Đây là %1$s. Bạn có thể thêm nội dung vào đây bằng cách truy cập vào %2$s và thêm các widgets mới vào đây."
+
+#: lib/structure/post.php:815
+msgid "Use `genesis_get_author_box()` instead."
+msgstr "Sử dụng `genesis_get_author_box()` thay thế."
+
+#: lib/structure/post.php:812
+msgid "The default is true, so remove the second argument."
+msgstr "Mặc định là true,nên hãy xoá argument thứ hai."
+
+#. translators: 1: Name of the image, 2: The error message.
+#: lib/functions/onboarding.php:591
+msgid "There was an error importing the %1$s image. Error: %2$s"
+msgstr "Đã xảy ra lỗi khi nhập ảnh %1$s. Mã lỗi: %2$s"
+
+#. translators: 1: URL of the image, 2: The error message.
+#: lib/functions/onboarding.php:572
+msgid "There was an error downloading the featured image from %1$s. Error: %2$s"
+msgstr "Đã xảy ra lỗi khi tải xuống ảnh đại diện của bài viết từ %1$s. Mã lỗi: %2$s"
+
+#. translators: 1: Title of the menu item, 2: The error message.
+#: lib/functions/onboarding.php:424
+msgid "There was an error creating the %1$s menu item. Error: %2$s"
+msgstr "Đã xảy ra lỗi khi tạo mục menu %1$s. Mã lỗi: %2$s"
+
+#. translators: 1: Title of the menu, 2: The error message.
+#: lib/functions/onboarding.php:359
+msgid "There was an error creating the %1$s menu. Error: %2$s"
+msgstr "Đã xảy ra lỗi khi tạo menu %1$s. Mã lỗi: %2$s"
+
+#: lib/classes/class-genesis-script-loader.php:305
+msgid "A setup step has completed."
+msgstr "Bước thiết lập đã hoàn thành"
+
+#: lib/classes/class-genesis-script-loader.php:304
+msgid "A setup step has started."
+msgstr "Bước thiết lập đã bắt đầu."
+
+#: lib/classes/class-genesis-script-loader.php:303
+msgid "The website setup process has completed."
+msgstr "Quá trình thiết lập trang web đã hoàn thành."
+
+#: lib/classes/class-genesis-script-loader.php:302
+msgid "The website setup process has started."
+msgstr "Quá trình thiết lập trang web đã bắt đầu"
+
+#: lib/views/pages/genesis-admin-onboarding.php:133
+msgid "Atomic Blocks"
+msgstr "Atomic Blocks"
+
+#: lib/views/pages/genesis-admin-onboarding.php:132
+msgid "Gutenberg News"
+msgstr "Tin tức từ Gutenberg"
+
+#: lib/views/pages/genesis-admin-onboarding.php:131
+msgid "StudioPress Blog"
+msgstr "StudioPress Blog"
+
+#: lib/views/pages/genesis-admin-onboarding.php:130
+msgid "Gutenberg Intro"
+msgstr "Giới thiệu về Gutenberg"
+
+#: lib/views/pages/genesis-admin-onboarding.php:128
+msgid "Learn about the new WordPress editor (Gutenberg) and building with content blocks by using these resources below."
+msgstr "Tìm hiểu về trình chỉnh sửa WordPress mới (Gutenberg) và xây dựng các khối nội dung bằng cách sử dụng các tài nguyên dưới đây."
+
+#: lib/views/pages/genesis-admin-onboarding.php:127
+msgid "Helpful Links"
+msgstr "Liên kết hữu ích"
+
+#: lib/views/pages/genesis-admin-onboarding-packs.php:112
+#: lib/views/pages/genesis-admin-onboarding.php:120
+msgid "Edit your homepage"
+msgstr "Sửa trang chủ"
+
+#: lib/views/pages/genesis-admin-onboarding-packs.php:111
+#: lib/views/pages/genesis-admin-onboarding.php:119
+msgid "View your homepage"
+msgstr "Xem trang chủ"
+
+#: lib/views/pages/genesis-admin-onboarding.php:117
+msgid "Your website setup is complete! View or edit your homepage using the buttons below."
+msgstr "Quá trình thiết lập trang web đã hoàn tất! Xem hoặc chỉnh sửa trang chủ của bạn bằng cách sử dụng các nút bên dưới."
+
+#: lib/views/pages/genesis-admin-onboarding-packs.php:108
+#: lib/views/pages/genesis-admin-onboarding.php:116
+msgid "All done!"
+msgstr "Tất cả đã hoàn tất!"
+
+#: lib/functions/onboarding.php:185
+#: lib/views/pages/genesis-admin-onboarding-packs.php:84
+#: lib/views/pages/genesis-admin-onboarding.php:87
+msgid "Demo content"
+msgstr "Nội dung demo"
+
+#: lib/functions/onboarding.php:142
+#: lib/views/pages/genesis-admin-onboarding-packs.php:64
+#: lib/views/pages/genesis-admin-onboarding.php:64
+msgid "Recommended plugins"
+msgstr "Plugin được khuyên dùng"
+
+#: lib/views/pages/genesis-admin-onboarding.php:44
+msgid "Or go to Theme Settings"
+msgstr "Hoặc đi tới Cài đặt Giao diện"
+
+#: lib/functions/upgrade.php:332
+msgid "update now"
+msgstr "nâng cấp ngay bây giờ"
+
+#: lib/functions/upgrade.php:284 lib/functions/upgrade.php:325
+msgid "Check out what's new"
+msgstr "Kiểm tra xem có gì mới"
+
+#. translators: 1: Genesis version, 2: URL for change log, 3: URL for updating
+#. Genesis.
+#: lib/functions/upgrade.php:318
+msgid "Genesis %1$s is available. %2$s or %3$s."
+msgstr "Genesis %1$s có sẵn. %2$s hoặc %3$s."
+
+#: lib/functions/layout.php:583
+msgid "Use `genesis_get_structural_wrap()` instead."
+msgstr "Sử dụng `genesis_get_structural_wrap()` thay thế."
+
+#: lib/functions/layout.php:580
+msgid "The default is true, so remove the third argument."
+msgstr "Mặc định là true,nên hãy xoá argument thứ ba."
+
+#: lib/classes/class-genesis-admin-onboarding.php:32
+msgid "Genesis - Getting Started"
+msgstr "Genesis - Bắt Đầu"
+
+#. translators: 1: Title of the page, 2: The error message.
+#: lib/functions/onboarding.php:540
+msgid "There was an error importing the %1$s page. Error: %2$s"
+msgstr "Đã xảy ra lỗi khi nhập trang %1$s. Mã lỗi: %2$s"
+
+#: lib/views/meta-boxes/genesis-inpost-seo-box.php:52
+#: lib/views/meta-boxes/genesis-term-meta-seo.php:38
+#: lib/views/meta-boxes/genesis-user-seo.php:39
+msgid "A comma-separated list of keywords relevant to the page can be entered in the Meta Keywords field. Keywords are generally ignored by Search Engines."
+msgstr "Danh sách từ khóa được phân tách bằng dấu phẩy (,) có liên quan đến trang có thể được nhập vào Meta Keywords. Keywords thường bị bỏ qua bởi Công cụ tìm kiếm."
+
+#: lib/views/meta-boxes/genesis-inpost-seo-box.php:38
+#: lib/views/meta-boxes/genesis-term-meta-seo.php:30
+#: lib/views/meta-boxes/genesis-user-seo.php:31
+msgid "Text entered in the Meta Description field is used as the short page description under the title on search engine results pages."
+msgstr "Văn bản được nhập trong phần Meta Description được sử dụng làm đoạn mô tả ngắn dưới tiêu đề được hiển thị trên các kết quả tìm kiếm."
+
+#: lib/structure/post.php:1096
+msgid "Next Post:"
+msgstr "Bài viết sau"
+
+#: lib/structure/post.php:1083
+msgid "Previous Post:"
+msgstr "Bài viết trước"
+
+#: lib/classes/class-genesis-search-form.php:48
+msgid "Search site"
+msgstr "Trang tìm kiếm"
+
+#: lib/admin/privacy-requests.php:105
+msgid "Update Notification Email Address removed."
+msgstr "Cập nhật địa chỉ email thông báo đã bị xóa."
+
+#. translators: %s: One of Custom Archive Headline, Custom Description Text,
+#. Custom Document Title, Meta Description, Meta Keywords
+#: lib/admin/privacy-requests.php:77
+msgid "Your %s data was unable to be removed at this time."
+msgstr "Dữ liệu %s của bạn không thể bị xóa trong thời điểm này."
+
+#: lib/admin/privacy-requests.php:31
+msgid "Update Notification Email Address"
+msgstr "Cập nhật địa chỉ email thông báo"
+
+#. translators: %s: Genesis theme version
+#: lib/admin/dashboard.php:26
+msgid " Using Genesis %s."
+msgstr "Sử dụng Genesis %s."
+
+#. translators: 1: Version of PHP that Genesis requires, 2: The PHP version on
+#. this site
+#: config/requirements.php:34
+msgid "Genesis requires PHP version %1$s or higher. You are using version %2$s. Please <a href=\"%3$s\">upgrade PHP</a> to use Genesis."
+msgstr "Genesis yêu cầu PHP phiên bản %1$s hoặc cao hơn. Bạn đang sử dụng phiên bản %2$s. Vui lòng <a href=\"%3$s\">cập nhật phiên bản PHP</a> để sử dụng Genesis."
+
+#. translators: 1: Version of WordPress that Genesis requires, 2: The WordPress
+#. version on this site
+#: config/requirements.php:27
+msgid "Genesis requires WordPress version %1$s or higher. You are using version %2$s. Please upgrade WordPress to use Genesis."
+msgstr "Genesis yêu cầu WordPress phiên bản %1$s hoặc cao hơn. Bạn đang sử dụng phiên bản %2$s. Vui lòng cập nhật WordPress để sử dụng Genesis."
+
+#: lib/widgets/featured-post-widget.php:466
+msgid "Date Modified"
+msgstr "Ngày sửa đổi"
+
+#: lib/widgets/featured-post-widget.php:465
+msgid "Date Published"
+msgstr "Ngày xuất bản"
+
+#: lib/views/meta-boxes/genesis-inpost-adsense-box.php:25
+msgid "Disable AdSense output for this entry?"
+msgstr "Vô hiệu hóa AdSense cho bài viết này?"
+
+#: config/customizer-theme-settings.php:101
+msgid "Select Site Layout"
+msgstr "Chọn bố cục"
+
+#: config/customizer-theme-settings.php:45
+#: config/customizer-theme-settings.php:50
+msgid "Email Address"
+msgstr "Địa chỉ email"
+
+#: config/customizer-seo-settings.php:213
+#: config/customizer-seo-settings.php:268
+msgid "Search Results"
+msgstr "Kết quả tìm kiếm"
+
+#: lib/classes/class-genesis-admin-cpt-archive-settings.php:69
+msgid "Archive"
+msgstr "Lưu trữ"
+
+#: 404.php:36
+msgid "Not found, error 404"
+msgstr "Không tìm thấy, lỗi 404"
+
+#: search.php:22
+msgid "Search Results for:"
+msgstr "Kết quả tìm kiếm cho:"
+
+#: config/customizer-theme-settings.php:61 lib/views/help/genesis-header.php:15
+msgid "Header"
+msgstr "Header"
+
+#: lib/views/pages/genesis-admin-upgraded.php:44
+msgid "Go to SEO Settings &rarr;"
+msgstr "Chuyển tới Cài đặt SEO &rarr;"
+
+#: lib/views/pages/genesis-admin-upgraded.php:42
+msgid "Go to Theme Settings &rarr;"
+msgstr "Chuyển tới Cài đặt giao diện &rarr;"
+
+#. translators: %s: Genesis version.
+#: lib/classes/class-genesis-admin-upgraded.php:37
+msgid "Welcome to Genesis %s"
+msgstr "Chào mừng tới Genesis %s"
+
+#: config/customizer-theme-settings.php:333 lib/admin/install.php:56
+#: lib/classes/Upgrade/Upgrade_DB_3100.php:56
+#: tests/Unit/lib/classes/Upgrade/Upgrade_DB_3100.php:62
+msgid "on"
+msgstr "trên"
+
+#: lib/views/meta-boxes/genesis-cpt-archives-settings.php:54
+#: lib/views/meta-boxes/genesis-term-meta-settings.php:46
+msgid "Leave empty if you do not want to display any intro text."
+msgstr "Để trống nếu bạn không muốn hiển thị bất kỳ chữ giới thiệu nào"
+
+#: lib/views/meta-boxes/genesis-cpt-archives-settings.php:43
+#: lib/views/meta-boxes/genesis-term-meta-settings.php:35
+msgid "Archive Intro Text"
+msgstr "Chữ giới thiệu lưu trữ"
+
+#: lib/views/meta-boxes/genesis-cpt-archives-settings.php:35
+#: lib/views/meta-boxes/genesis-term-meta-settings.php:28
+msgid "Leave empty if you do not want to display a headline."
+msgstr "Để trống nếu bạn không muốn hiển thị một tiêu đề"
+
+#: lib/views/meta-boxes/genesis-cpt-archives-settings.php:27
+#: lib/views/meta-boxes/genesis-term-meta-settings.php:20
+msgid "Archive Headline"
+msgstr "Tiêu đề lưu trữ"
+
+#: lib/classes/class-genesis-admin.php:151
+msgid "Error saving settings."
+msgstr "Lỗi lưu thiết lập"
+
+#: lib/widgets/user-profile-widget.php:202
+msgid "Custom Text Content"
+msgstr "Tùy chỉnh chữ Nội dung"
+
+#: lib/init.php:161
+msgid "Secondary Navigation Menu"
+msgstr "Menu truy cập thứ hai"
+
+#: lib/functions/widgetize.php:135
+msgid "Header Left"
+msgstr "Phần đầu bên trái"
+
+#: lib/widgets/user-profile-widget.php:221
+msgid "Extended page link text"
+msgstr "Chữ liên kết trang mở rộng"
+
+#. translators: %d: Footer widget counter.
+#: lib/functions/widgetize.php:193
+msgid "Footer %d widget area."
+msgstr "Khu vực widget phần cuối %d "
+
+#: lib/functions/widgetize.php:158
+msgid "This is the secondary sidebar if you are using a three column site layout option."
+msgstr "Đây là sidebar thứ hai nếu bạn đang sử dụng lựa chọn mẫu 3 cột. "
+
+#: lib/functions/widgetize.php:147
+msgid "This is the primary sidebar if you are using a two or three column site layout option."
+msgstr "Đây là sidebar chính nếu bạn đang sử dụng lựa chọn mẫu 2 hoặc 3 cột."
+
+#: lib/functions/deprecated.php:1252
+msgid "The argument, \"context\", has been replaced with \"theme_location\" in the $args array."
+msgstr "Tham số, \"context\" đã được thay thế bằng \"theme_location\" trong biến chứ mảng $args"
+
+#. translators: %s: Genesis_Admin class name.
+#: lib/classes/class-genesis-admin.php:161
+msgid "You cannot use %s to create two menus in the same subclass. Please use separate subclasses for each menu."
+msgstr "Bạn không thể dùng %s để tạo ra 2 menu trong cùng một lớp con. Hãy sử dùng những lớp con riêng biệt cho mỗi menu"
+
+#: lib/views/meta-boxes/genesis-user-author.php:15
+msgid "Author Archive Settings"
+msgstr "Thiết lập lưu trữ tác giả"
+
+#: lib/views/meta-boxes/genesis-user-settings.php:15
+msgid "User Permissions"
+msgstr "Quyền hạn thành viên"
+
+#. translators: %s: </element>
+#: config/customizer-theme-settings.php:345
+#: config/customizer-theme-settings.php:355
+msgid "This code will output immediately before the closing %s tag in the document source."
+msgstr "hook thực hiện ngay lập tức trước khi kết thúc %s tag trong mã nguồn tài liệu."
+
+#: lib/classes/class-genesis-admin-cpt-archive-settings.php:60
+#: lib/classes/class-genesis-admin-cpt-archive-settings.php:61
+#: lib/classes/class-genesis-admin-cpt-archive-settings.php:149
+#: lib/classes/class-genesis-admin-cpt-archive-settings.php:177
+#: lib/views/help/cpt-archive-archive.php:15
+#: lib/views/meta-boxes/genesis-term-meta-settings.php:16
+msgid "Archive Settings"
+msgstr "Thiết lập lưu trữ"
+
+#: lib/admin/inpost-metaboxes.php:229
+#: lib/classes/class-genesis-admin-cpt-archive-settings.php:156
+#: lib/classes/class-genesis-admin-cpt-archive-settings.php:179
+#: lib/views/help/cpt-archive-layout.php:15
+#: lib/views/meta-boxes/genesis-cpt-archives-layout-settings.php:23
+#: lib/views/meta-boxes/genesis-inpost-layout-box.php:27
+#: lib/views/meta-boxes/genesis-term-meta-layout.php:15
+#: lib/views/meta-boxes/genesis-user-layout.php:17
+msgid "Layout Settings"
+msgstr "Thiết lập kiểu mẫu"
+
+#: config/customizer-seo-settings.php:24 lib/admin/inpost-metaboxes.php:33
+#: lib/admin/inpost-metaboxes.php:63
+#: lib/views/meta-boxes/genesis-term-meta-seo.php:15
+msgid "Theme SEO Settings"
+msgstr "Thiết lập SEO Giao diện"
+
+#: lib/views/help/genesis-scripts.php:15
+msgid "Header and Footer Scripts"
+msgstr "Scripts ở Header và Footer"
+
+#: config/customizer-theme-settings.php:187
+#: lib/views/help/genesis-comments.php:15
+msgid "Comments and Trackbacks"
+msgstr "Bình luận và Trackback"
+
+#: lib/views/help/genesis-layout.php:15 lib/js/build/layout-toggle.js:10
+#: lib/js/editor/layout-toggle.js:40
+msgid "Default Layout"
+msgstr "Bố cục mặc định"
+
+#: config/customizer-seo-settings.php:111
+msgid "Keywords are generally ignored by Search Engines."
+msgstr "Từ khóa thường bị bỏ qua bởi bộ máy tìm kiếm"
+
+#: lib/classes/class-genesis-admin.php:149
+msgid "Settings saved."
+msgstr "Thiết lập đã lưu"
+
+#: lib/classes/class-genesis-admin.php:150
+msgid "Settings reset."
+msgstr "Làm lại thiết lập"
+
+#: lib/classes/class-genesis-admin-import-export.php:101
+msgid "Settings successfully imported."
+msgstr "Thiết lập đã được nhập vào thành công."
+
+#: lib/views/pages/genesis-admin-import-export.php:43
+msgid "Upload File and Import"
+msgstr "Tải tập tin lên và Nhập vào"
+
+#: lib/views/pages/genesis-admin-import-export.php:30
+msgid "Choose the file from your computer and click \"Upload file and Import\""
+msgstr "Hãy chọn tập tin từ máy tính của bạn và nhấn vào \"Tải tập tin lên và Nhập vào\""
+
+#: lib/admin/customizer.php:94
+msgid "Default"
+msgstr "Mặc định"
+
+#: lib/structure/post.php:888 lib/structure/post.php:1042
+msgid "Next Page"
+msgstr "Trang sau"
+
+#: lib/structure/post.php:887 lib/structure/post.php:980
+msgid "Previous Page"
+msgstr "Trang trước"
+
+#: lib/shortcodes/post.php:45 lib/shortcodes/post.php:121
+msgid "ago"
+msgstr "trước"
+
+#: lib/classes/class-genesis-script-loader.php:277
+msgid "Select / Deselect All"
+msgstr "Chọn/Bỏ chọn Tất cả"
+
+#: lib/classes/class-genesis-admin-import-export.php:149
+msgid "No export options available."
+msgstr "Không có lựa chọn xuất ra nào hữu dụng"
+
+#. translators: %d: Footer widget counter.
+#: lib/functions/widgetize.php:191
+msgid "Footer %d"
+msgstr "Phần cuối %d"
+
+#: lib/functions/layout.php:80
+msgid "No Label Selected"
+msgstr "Không có nhãn nào được chọn"
+
+#: lib/classes/class-genesis-admin-import-export.php:103
+msgid "There was a problem importing your settings. Please try again."
+msgstr "Có lỗi trong quá trình nhập vào thiết lập của bạn. Xin hãy thử lại."
+
+#: lib/functions/markup.php:1018 lib/functions/widgetize.php:157
+msgid "Secondary Sidebar"
+msgstr "Sidebar thứ hai"
+
+#: lib/functions/markup.php:998 lib/functions/widgetize.php:146
+msgid "Primary Sidebar"
+msgstr "Sidebar chính"
+
+#: lib/functions/widgetize.php:135
+msgid "Header Right"
+msgstr "Phần đầu bên phải"
+
+#: config/breadcrumbs.php:50
+msgid "Not found: "
+msgstr "Không tìm thấy: "
+
+#: lib/widgets/featured-post-widget.php:580
+msgid "No Content"
+msgstr "Không có nội dung"
+
+#: lib/widgets/featured-post-widget.php:579
+msgid "Show Content Limit"
+msgstr "Hiển thị giới hạn nội dung"
+
+#: lib/widgets/featured-post-widget.php:578
+msgid "Show Excerpt"
+msgstr "Hiển thị đoạn trích"
+
+#: lib/widgets/featured-post-widget.php:577
+msgid "Show Content"
+msgstr "Hiển thị nội dung"
+
+#: lib/widgets/featured-post-widget.php:575
+msgid "Content Type"
+msgstr "Kiểu nội dung"
+
+#: lib/widgets/featured-post-widget.php:567
+msgid "Show Post Info"
+msgstr "Hiện thông tin bài viết"
+
+#: lib/widgets/featured-page-widget.php:323
+#: lib/widgets/featured-post-widget.php:527
+msgid "Show Featured Image"
+msgstr "Hiển thị Ảnh đặc trưng"
+
+#: lib/views/meta-boxes/genesis-user-author.php:36
+msgid "This text will be the first paragraph, and display on the first page"
+msgstr "Chữ này sẽ là đoạn văn đầu tiên, và hiển thị ở phần đầu của trang"
+
+#: lib/admin/privacy-requests.php:193
+#: lib/views/meta-boxes/genesis-user-author.php:33
+msgid "Custom Description Text"
+msgstr "Tùy chỉnh chữ mô tả"
+
+#. translators: %s: Escaped h1 tag wrapped in code tags.
+#: lib/views/meta-boxes/genesis-user-author.php:26
+msgid "Will display in the %s tag at the top of the first page"
+msgstr "Sẽ hiển thị trong %s tag ở phần đầu tiên của trang đầu tiên"
+
+#: lib/admin/privacy-requests.php:192
+#: lib/views/meta-boxes/genesis-user-author.php:20
+msgid "Custom Archive Headline"
+msgstr "Tiêu đề lưu trữ tùy chỉnh"
+
+#: lib/views/meta-boxes/genesis-user-author.php:16
+#: lib/views/meta-boxes/genesis-user-layout.php:18
+#: lib/views/meta-boxes/genesis-user-seo.php:16
+msgid "These settings apply to this author's archive pages."
+msgstr "Những thiết lập này áp dụng cho trang lưu trữ tác giả này"
+
+#: lib/views/meta-boxes/genesis-user-author.php:47
+msgid "Enable Author Box on this User's Archives?"
+msgstr "Bật Khung tác giả trên khu vực lưu trữ của thành viên này"
+
+#: lib/views/meta-boxes/genesis-user-author.php:44
+msgid "Enable Author Box on this User's Posts?"
+msgstr "Bật Khung tác giả trên bài viết của thành viên này"
+
+#: lib/views/meta-boxes/genesis-user-settings.php:31
+msgid "Enable Import/Export Submenu?"
+msgstr "Bật menu con của Nhập vào/Xuất ra?"
+
+#: lib/views/meta-boxes/genesis-user-settings.php:26
+msgid "Enable SEO Settings Submenu?"
+msgstr "Bật menu con của thiết lập SEO?"
+
+#: lib/views/meta-boxes/genesis-user-settings.php:22
+msgid "Enable Genesis Admin Menu?"
+msgstr "Bật menu quản trị Genesis"
+
+#: lib/views/meta-boxes/genesis-user-settings.php:19
+msgid "Genesis Admin Menus"
+msgstr "Menu Quản trị Genesis"
+
+#: lib/views/meta-boxes/genesis-term-meta-layout.php:20
+#: lib/views/meta-boxes/genesis-term-meta-layout.php:23
+#: lib/views/meta-boxes/genesis-user-layout.php:22
+#: lib/views/meta-boxes/genesis-user-layout.php:25
+msgid "Choose Layout"
+msgstr "Chọn kiểu mẫu"
+
+#: lib/classes/class-genesis-admin-import-export.php:46
+#: lib/classes/class-genesis-admin-import-export.php:64
+#: lib/views/help/import-export-general.php:15
+msgid "Import/Export"
+msgstr "Nhập vào/Xuất ra"
+
+#: lib/views/meta-boxes/genesis-inpost-layout-box.php:56
+msgid "Custom Post Class"
+msgstr "Tùy chỉnh Class bài viết"
+
+#: lib/views/meta-boxes/genesis-cpt-archives-layout-settings.php:50
+#: lib/views/meta-boxes/genesis-inpost-layout-box.php:51
+msgid "Custom Body Class"
+msgstr "Tùy chỉnh Body Class"
+
+#: lib/views/help/genesis-inpost-seo.php:35
+#: lib/views/meta-boxes/genesis-inpost-seo-box.php:62
+msgid "Custom Redirect URL"
+msgstr "Tùy chỉnh URI chuyển hướng"
+
+#. translators: %s: String length
+#: lib/views/meta-boxes/genesis-inpost-seo-box.php:28
+#: lib/views/meta-boxes/genesis-inpost-seo-box.php:42
+msgid "Characters Used: %s"
+msgstr "Ký tự được dùng: %s"
+
+#: lib/views/pages/genesis-admin-import-export.php:66
+msgid "Download Export File"
+msgstr "Tải Xuất ra tập tin về "
+
+#: lib/views/pages/genesis-admin-import-export.php:59
+msgid "Once you have saved the download file, you can use the import function on another site to import this data."
+msgstr "Khi bạn đã lưu lại tập tin tải về, bạn có thể dùng chức năng nhập vào có trên các website khác để nhập vào dữ liệu này."
+
+#: lib/views/pages/genesis-admin-import-export.php:51
+msgid "Export Genesis Settings File"
+msgstr "Xuất ra tập tin thiết lập Genesis"
+
+#. translators: %s: Maximum size import files can have.
+#: lib/views/pages/genesis-admin-import-export.php:38
+msgid "Upload File (Maximum Size: %s): "
+msgstr "Tải lên tập tin: (Kích cỡ tối đa: %s)"
+
+#: lib/views/pages/genesis-admin-import-export.php:22
+msgid "Import Genesis Settings File"
+msgstr "Nhập vào tập tin thiết lập Genesis"
+
+#: lib/classes/class-genesis-admin-import-export.php:45
+msgid "Genesis - Import/Export"
+msgstr "Genesis - Nhập vào/Xuất ra"
+
+#: lib/widgets/user-profile-widget.php:227
+msgid "Show Author Archive Link?"
+msgstr "Hiện liên kết đến trang Tác giả"
+
+#: lib/widgets/user-profile-widget.php:208
+msgid "Choose your extended \"About Me\" page from the list below. This will be the page linked to at the end of the about me section."
+msgstr "Hãy chọn trang mở rộng \"Về Tôi\" từ danh sách bên dưới. Điều này sẽ tạo ra trang gắn kết vào phần cuối của mục giới thiệu về tôi"
+
+#: lib/widgets/user-profile-widget.php:201
+msgid "Custom Text (below)"
+msgstr "Tùy chỉnh chữ (bên dưới)"
+
+#: lib/widgets/user-profile-widget.php:199
+msgid "Author Bio"
+msgstr "Tiểu sử Tác giả"
+
+#: lib/widgets/user-profile-widget.php:196
+msgid "Select which text you would like to use as the author description"
+msgstr "Hãy chọn chữ mà bạn muốn dùng cho phần mô tả về tác giả"
+
+#: lib/widgets/user-profile-widget.php:176
+msgid "Extra Large"
+msgstr "Rất lớn"
+
+#: lib/widgets/user-profile-widget.php:175
+msgid "Large"
+msgstr "Lớn"
+
+#: lib/widgets/user-profile-widget.php:174
+msgid "Medium"
+msgstr "Vừa"
+
+#: lib/widgets/user-profile-widget.php:173
+msgid "Small"
+msgstr "Nhỏ"
+
+#: lib/widgets/user-profile-widget.php:156
+msgid "Select a user. The email address for this account will be used to pull the Gravatar image."
+msgstr "Chọn một thành viên. Địa chỉ email của tài khoản này sẽ được sử dụng để lấy hình ảnh từ Gravatar"
+
+#: lib/widgets/user-profile-widget.php:110
+msgid "View My Blog Posts"
+msgstr "Xem các bài viết Blog của tôi"
+
+#: lib/widgets/user-profile-widget.php:58
+msgid "Genesis - User Profile"
+msgstr "Genesis - Hồ sơ thành viên"
+
+#: lib/widgets/user-profile-widget.php:49
+msgid "Displays user profile block with Gravatar"
+msgstr "Hiển thị khối thông tin thành viên với Gravatar"
+
+#: lib/widgets/featured-post-widget.php:620
+msgid "Link Text"
+msgstr "Chữ liên kết"
+
+#: lib/widgets/featured-post-widget.php:616
+msgid "Show Category Archive Link"
+msgstr "Hiển thị liên kết đến phần lưu trữ chủ đề"
+
+#: lib/widgets/featured-post-widget.php:598
+msgid "To display an unordered list of more posts from this category, please fill out the information below"
+msgstr "Để hiển thị danh sách chưa được sắp xếp của các bài viết trong chủ đề này, hãy điền thông tin vào bên dưới."
+
+#: lib/widgets/featured-post-widget.php:590
+msgid "More Text (if applicable)"
+msgstr "Thêm chữ (nếu muốn)"
+
+#: lib/widgets/featured-post-widget.php:562
+msgid "Show Post Title"
+msgstr "Hiện tiêu đề bài viết"
+
+#: lib/widgets/featured-post-widget.php:513
+#: lib/widgets/user-profile-widget.php:187
+msgid "Gravatar Alignment"
+msgstr "Canh chỉnh Gravatar"
+
+#: lib/widgets/featured-post-widget.php:508
+msgid "Extra Large (125px)"
+msgstr "Rất lớn (125px)"
+
+#: lib/widgets/featured-post-widget.php:507
+msgid "Large (85px)"
+msgstr "Lớn (85px)"
+
+#: lib/widgets/featured-post-widget.php:506
+msgid "Medium (65px)"
+msgstr "Trung bình (65px)"
+
+#: lib/widgets/featured-post-widget.php:505
+msgid "Small (45px)"
+msgstr "Nhỏ (45px)"
+
+#: lib/widgets/featured-post-widget.php:503
+#: lib/widgets/user-profile-widget.php:169
+msgid "Gravatar Size"
+msgstr "Kích cỡ Gravatar"
+
+#: lib/widgets/featured-post-widget.php:499
+msgid "Show Author Gravatar"
+msgstr "Hiển thị Gravatar tác giả"
+
+#: lib/widgets/featured-post-widget.php:479
+msgid "Ascending (1, 2, 3)"
+msgstr "Tăng dần (1,2,3)"
+
+#: lib/widgets/featured-post-widget.php:478
+msgid "Descending (3, 2, 1)"
+msgstr "Giảm dần (3,2,1)"
+
+#: lib/widgets/featured-post-widget.php:476
+msgid "Sort Order"
+msgstr "Sắp xếp thứ tự"
+
+#: lib/widgets/featured-post-widget.php:471
+msgid "Random"
+msgstr "Ngẫu nhiên"
+
+#: lib/widgets/featured-post-widget.php:470
+msgid "Comment Count"
+msgstr "Đếm bình luận"
+
+#: lib/widgets/featured-post-widget.php:469
+msgid "ID"
+msgstr "ID"
+
+#: lib/widgets/featured-post-widget.php:468
+msgid "Parent"
+msgstr "Cha"
+
+#: lib/widgets/featured-post-widget.php:463
+msgid "Order By"
+msgstr "Sắp xếp theo"
+
+#: lib/widgets/featured-post-widget.php:458
+msgid "Number of Posts to Offset"
+msgstr "Số bài viết đến vị trí"
+
+#: lib/widgets/featured-post-widget.php:437
+msgid "Category"
+msgstr "Chủ đề"
+
+#: lib/widgets/featured-post-widget.php:61
+msgid "More Posts from this Category"
+msgstr "Thêm bài viết từ chủ đề này"
+
+#: lib/widgets/featured-post-widget.php:57
+msgid "[Read More...]"
+msgstr "[Đọc thêm...]"
+
+#: lib/widgets/featured-post-widget.php:75
+msgid "Genesis - Featured Posts"
+msgstr "Genesis - Bài viết Nổi bật"
+
+#: lib/widgets/featured-post-widget.php:66
+msgid "Displays featured posts with thumbnails"
+msgstr "Hiển thị các bài viết nổi bật kèm theo ảnh đại diện"
+
+#: lib/widgets/featured-page-widget.php:366
+msgid "More Text"
+msgstr "Chữ Thêm"
+
+#: lib/widgets/featured-page-widget.php:361
+msgid "Content Character Limit"
+msgstr "Giới hạn ký tự nội dung"
+
+#: lib/widgets/featured-page-widget.php:357
+msgid "Show Page Content"
+msgstr "Hiển thị nội dung trang"
+
+#: lib/widgets/featured-page-widget.php:352
+msgid "Show Page Title"
+msgstr "Hiển thị tiêu đề trang"
+
+#: config/customizer-seo-settings.php:77
+#: config/customizer-theme-settings.php:297
+#: lib/widgets/featured-page-widget.php:341
+#: lib/widgets/featured-post-widget.php:515
+#: lib/widgets/featured-post-widget.php:545
+#: lib/widgets/user-profile-widget.php:189
+#: lib/widgets/user-profile-widget.php:213
+msgid "None"
+msgstr "Không"
+
+#: lib/widgets/featured-page-widget.php:339
+#: lib/widgets/featured-post-widget.php:543
+msgid "Image Alignment"
+msgstr "Canh chỉnh Ảnh"
+
+#: lib/widgets/featured-page-widget.php:304
+msgid "Page"
+msgstr "Trang"
+
+#: config/customizer-theme-settings.php:236 lib/admin/install.php:44
+#: lib/classes/Upgrade/Upgrade_DB_3200.php:55 lib/shortcodes/footer.php:151
+msgid "by"
+msgstr "bởi"
+
+#: lib/widgets/featured-page-widget.php:60
+msgid "Genesis - Featured Page"
+msgstr "Genesis - Trang đặc trưng"
+
+#: lib/widgets/featured-page-widget.php:51
+msgid "Displays featured page with thumbnails"
+msgstr "Hiển thị trang đặc trưng kèm theo hình đại diện"
+
+#: lib/widgets/featured-page-widget.php:299
+#: lib/widgets/featured-post-widget.php:428
+#: lib/widgets/featured-post-widget.php:467
+#: lib/widgets/featured-post-widget.php:601
+#: lib/widgets/user-profile-widget.php:151 lib/js/build/title-toggle.js:26
+#: lib/js/editor/title-toggle.js:42
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: config/breadcrumbs.php:47
+msgid "Search for "
+msgstr "Tìm kiếm cho"
+
+#: config/breadcrumbs.php:43 config/breadcrumbs.php:44
+#: config/breadcrumbs.php:45 config/breadcrumbs.php:46
+#: config/breadcrumbs.php:48 config/breadcrumbs.php:49
+#: lib/structure/archive.php:194 lib/structure/archive.php:196
+#: lib/structure/archive.php:198
+msgid "Archives for "
+msgstr "Lưu trữ cho"
+
+#: config/breadcrumbs.php:42
+msgid "You are here: "
+msgstr "Bạn đang ở:"
+
+#: lib/structure/sidebar.php:41
+msgid "Secondary Sidebar Widget Area"
+msgstr "Khu vực Sidebar Widget thứ hai"
+
+#: lib/structure/sidebar.php:25
+msgid "Primary Sidebar Widget Area"
+msgstr "Khu vực Sidebar Widget chính"
+
+#: lib/classes/class-genesis-search-form.php:51 searchform.php:49
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: lib/structure/post.php:740
+msgid "About"
+msgstr "Nói về"
+
+#: lib/widgets/featured-post-widget.php:54
+msgid "By"
+msgstr "Bởi"
+
+#: lib/structure/post.php:513
+msgid "[Read more...]"
+msgstr "[Đọc thêm...]"
+
+#: lib/functions/deprecated.php:810 lib/structure/comments.php:75
+msgid "Comments"
+msgstr "Bình luận"
+
+#: lib/functions/deprecated.php:809
+msgid "Posts"
+msgstr "Bài viết"
+
+#: lib/init.php:160
+msgid "Primary Navigation Menu"
+msgstr "Menu truy cập chính"
+
+#: config/customizer-theme-settings.php:333 lib/admin/install.php:56
+#: lib/classes/Upgrade/Upgrade_DB_3100.php:56
+#: tests/Unit/lib/classes/Upgrade/Upgrade_DB_3100.php:62
+msgid "Copyright"
+msgstr "Bản quyền"
+
+#: lib/structure/comments.php:414
+msgid "Your comment is awaiting moderation."
+msgstr "Bình luận của bạn đang chờ để xét duyệt"
+
+#. translators: 1: A date, 2: A time.
+#: lib/structure/comments.php:367
+msgid "%1$s at %2$s"
+msgstr "%1$s lúc %2$s"
+
+#: lib/structure/comments.php:323
+msgid "says"
+msgstr "viết"
+
+#: lib/shortcodes/post.php:573 lib/structure/comments.php:398
+#: lib/structure/post.php:495
+msgid "(Edit)"
+msgstr "(Sửa)"
+
+#: lib/shortcodes/post.php:474 lib/shortcodes/post.php:514
+msgid "Filed Under: "
+msgstr "Thuộc chủ đề:"
+
+#: lib/shortcodes/post.php:431
+msgid "Tagged With: "
+msgstr "Tag với:"
+
+#: lib/shortcodes/post.php:375
+msgid "% Comments"
+msgstr "% Bình luận"
+
+#: lib/shortcodes/post.php:376
+msgid "1 Comment"
+msgstr "1 Bình luận"
+
+#: lib/shortcodes/post.php:377
+msgid "Leave a Comment"
+msgstr "Để lại bình luận"
+
+#: lib/shortcodes/footer.php:278
+msgid "Log out"
+msgstr "Đăng xuất"
+
+#: lib/shortcodes/footer.php:276
+msgid "Log in"
+msgstr "Đăng nhập"
+
+#: lib/functions/deprecated.php:952
+msgid "Return to top of page"
+msgstr "Trở về đầu trang"
+
+#. translators: %s: Genesis version.
+#: lib/functions/upgrade.php:379
+msgid "Genesis %s is now available. We have provided 1-click updates for this theme, so please log into your dashboard and update at your earliest convenience."
+msgstr "Genesis %s đã có sẵn. Chúng tôi cung cấp chức năng cập nhật chỉ bằng 1-cú nhấn chuột cho giao diện, vì thế hãy đăng nhập vào bảng điều khiển và cập nhật sớm nhất vào thời điểm thuận tiện của bạn"
+
+#. translators: 1: Genesis version, 2: URL for current website.
+#: lib/functions/upgrade.php:376
+msgid "Genesis %1$s is available for %2$s"
+msgstr "Genesis %1$s đã có sẵn để %2$s"
+
+#: config/breadcrumbs.php:22 lib/functions/deprecated.php:1285
+msgid "Home"
+msgstr "Trang chủ"
+
+#: lib/widgets/featured-post-widget.php:453
+#: lib/widgets/featured-post-widget.php:606
+msgid "Number of Posts to Show"
+msgstr "Số bài viết để hiển thị"
+
+#: lib/widgets/featured-post-widget.php:445
+msgid "All Categories"
+msgstr "Tất cả chủ đề"
+
+#: config/customizer-theme-settings.php:312
+msgid "Numeric"
+msgstr "Dạng số"
+
+#: config/customizer-theme-settings.php:311
+msgid "Previous / Next"
+msgstr "Trước / Sau"
+
+#: lib/widgets/featured-page-widget.php:327
+#: lib/widgets/featured-post-widget.php:531
+msgid "Image Size"
+msgstr "Kích cỡ Ảnh"
+
+#: lib/widgets/featured-post-widget.php:585
+msgid "characters"
+msgstr "ký tự"
+
+#: lib/widgets/featured-post-widget.php:583
+msgid "Limit content to"
+msgstr "Giới hạn nội dung đến"
+
+#: config/customizer-theme-settings.php:256
+msgid "Select one of the following"
+msgstr "Chọn một trong những cái sau đây:"
+
+#: config/layouts.php:54 lib/views/help/cpt-archive-layout.php:25
+#: lib/views/help/genesis-layout.php:25
+msgid "Full Width Content"
+msgstr "Nội dung toàn trang"
+
+#: config/customizer-theme-settings.php:70
+msgid "Image logo"
+msgstr "Ảnh logo"
+
+#: config/customizer-theme-settings.php:252
+#: lib/views/help/genesis-archives.php:15
+msgid "Content Archives"
+msgstr "Nội dung lưu trữ"
+
+#: config/customizer-theme-settings.php:113
+#: lib/views/help/genesis-breadcrumbs.php:15
+#: lib/js/build/breadcrumbs-toggle.js:26 lib/js/editor/breadcrumbs-toggle.js:43
+msgid "Breadcrumbs"
+msgstr "Breadcrumbs"
+
+#: lib/views/meta-boxes/genesis-user-author.php:41
+msgid "Author Box"
+msgstr "Khung tác giả"
+
+#: lib/views/help/genesis-feeds.php:15
+msgid "Custom Feeds"
+msgstr "Tùy chỉnh Feed"
+
+#: lib/views/help/genesis-information.php:15
+msgid "Information"
+msgstr "Thông tin"
+
+#. translators: %s: robots meta content attribute value, such as 'noindex',
+#. 'nofollow' or 'noarchive'.
+#: lib/views/meta-boxes/genesis-term-meta-seo.php:50
+#: lib/views/meta-boxes/genesis-term-meta-seo.php:57
+#: lib/views/meta-boxes/genesis-term-meta-seo.php:64
+#: lib/views/meta-boxes/genesis-user-seo.php:51
+#: lib/views/meta-boxes/genesis-user-seo.php:59
+#: lib/views/meta-boxes/genesis-user-seo.php:66
+msgid "Apply %s to this archive?"
+msgstr "Áp dụng %s cho lưu trữ này ?"
+
+#: lib/views/meta-boxes/genesis-term-meta-seo.php:43
+#: lib/views/meta-boxes/genesis-user-seo.php:44
+msgid "Robots Meta"
+msgstr "Robots Meta"
+
+#: lib/views/meta-boxes/genesis-cpt-archives-seo-settings.php:36
+msgid "Comma separated list"
+msgstr "Dấu phẩy phân cách danh sách"
+
+#: config/customizer-seo-settings.php:158
+msgid "Include Windows Live Writer Support Tag?"
+msgstr "Bao gồm tag hỗ trợ Windows Live Writer ?"
+
+#: config/customizer-seo-settings.php:75
+msgid "Site Title"
+msgstr "Tiêu đề website"
+
+#: config/customizer-theme-settings.php:299
+#: lib/widgets/featured-page-widget.php:343
+#: lib/widgets/featured-post-widget.php:517
+#: lib/widgets/featured-post-widget.php:547
+#: lib/widgets/user-profile-widget.php:191
+msgid "Right"
+msgstr "Phải"
+
+#: config/customizer-theme-settings.php:298
+#: lib/widgets/featured-page-widget.php:342
+#: lib/widgets/featured-post-widget.php:516
+#: lib/widgets/featured-post-widget.php:546
+#: lib/widgets/user-profile-widget.php:190
+msgid "Left"
+msgstr "Trái"
+
+#: lib/classes/class-genesis-script-loader.php:280
+msgid "Are you sure you want to reset?"
+msgstr "Bạn có chắc bạn muốn thiết lập lại ?"
+
+#: lib/classes/class-genesis-admin.php:148
+msgid "Reset Settings"
+msgstr "Thiết lập lại"
+
+#: lib/classes/class-genesis-admin-seo-settings.php:40
+msgid "Genesis - SEO Settings"
+msgstr "Genesis - Thiết lập SEO"
+
+#: lib/views/help/seo-dochead.php:15
+msgid "Document Head Settings"
+msgstr "Thiết lập phần đầu tài liệu"
+
+#: lib/views/help/seo-homepage.php:15
+msgid "Homepage Settings"
+msgstr "Thiết lập trang chủ"
+
+#: lib/classes/class-genesis-admin-cpt-archive-settings.php:152
+#: lib/classes/class-genesis-admin-cpt-archive-settings.php:178
+#: lib/classes/class-genesis-admin-import-export.php:127
+#: lib/classes/class-genesis-admin-seo-settings.php:41
+#: lib/views/help/cpt-archive-seo.php:15 lib/views/help/seo-settings.php:15
+msgid "SEO Settings"
+msgstr "Thiết lập SEO"
+
+#. translators: %s: Theme settings admin screen link.
+#: config/customizer-theme-settings.php:23
+#: lib/classes/class-genesis-admin-import-export.php:123
+#: lib/classes/class-genesis-admin-settings.php:52
+#: lib/classes/class-genesis-admin-settings.php:53
+#: lib/functions/upgrade.php:289
+#: lib/views/meta-boxes/genesis-inpost-layout-box.php:32
+#: lib/views/meta-boxes/genesis-term-meta-layout.php:28
+#: lib/views/meta-boxes/genesis-user-layout.php:31
+msgid "Theme Settings"
+msgstr "Thiết lập Giao diện"
+
+#. translators: %s: robots meta content attribute value, such as 'noindex',
+#. 'nofollow' or 'noarchive'.
+#: lib/views/meta-boxes/genesis-inpost-seo-box.php:75
+#: lib/views/meta-boxes/genesis-inpost-seo-box.php:83
+#: lib/views/meta-boxes/genesis-inpost-seo-box.php:91
+msgid "Apply %s to this post/page"
+msgstr "Áp dụng %s cho bài viết/trang này"
+
+#: lib/views/help/seo-robots.php:15
+#: lib/views/meta-boxes/genesis-inpost-seo-box.php:67
+msgid "Robots Meta Settings"
+msgstr "Thiếp lập meta Robot"
+
+#: lib/admin/privacy-requests.php:194
+#: lib/views/meta-boxes/genesis-cpt-archives-seo-settings.php:19
+#: lib/views/meta-boxes/genesis-term-meta-seo.php:19
+#: lib/views/meta-boxes/genesis-user-seo.php:20
+msgid "Custom Document Title"
+msgstr "Tùy chỉnh Tiêu đề Tài liệu"
+
+#: comments.php:15
+msgid "This post is password protected. Enter the password to view comments."
+msgstr "Bài này đã bị đặt mật khẩu bảo vệ. Hãy nhập mật khẩu để xem các bình luận."
+
+#: lib/functions/general.php:558
+msgid "Recent Posts:"
+msgstr "Bài viết gần đây:"
+
+#: lib/functions/general.php:555
+msgid "Monthly:"
+msgstr "Hàng tháng:"
+
+#: lib/functions/general.php:552
+msgid "Authors:"
+msgstr "Tác giả:"
+
+#: lib/functions/general.php:549
+msgid "Categories:"
+msgstr "Chủ đề:"
+
+#: lib/functions/general.php:544 lib/structure/post.php:539
+msgid "Pages:"
+msgstr "Trang:"
+
+#: config/customizer-theme-settings.php:276
+msgid "Display the featured image?"
+msgstr "Hiển thị hình ảnh nổi bật?"
+
+#: lib/views/meta-boxes/genesis-cpt-archives-layout-settings.php:20
+#: lib/views/meta-boxes/genesis-inpost-layout-box.php:24
+#: lib/js/build/layout-toggle.js:10 lib/js/editor/layout-toggle.js:62
+msgid "Select Layout"
+msgstr "Chọn bố cục"
+
+#: config/customizer-theme-settings.php:30
+msgid "Updates"
+msgstr "Cập nhật"
+
+#: lib/functions/formatting.php:101
+msgid "about "
+msgstr "về"
+
+#. Theme Name of the theme
+#: lib/admin/site-health.php:31
+msgid "Genesis"
+msgstr "Genesis"
+
+#: lib/widgets/featured-post-widget.php:570
+msgid "Content Post Info"
+msgstr "Thông tin nội dung bài viết"
+
+#: lib/widgets/featured-post-widget.php:490
+msgid "Exclude Sticky Posts?"
+msgstr "Loại trừ bài viết dính?"
+
+#: config/customizer-theme-settings.php:300
+#: lib/widgets/featured-page-widget.php:344
+#: lib/widgets/featured-post-widget.php:548
+msgid "Center"
+msgstr "Chính giữa"
+
+#: lib/widgets/featured-page-widget.php:138
+#: lib/widgets/featured-post-widget.php:176
+msgid "(no title)"
+msgstr "(không tiêu đề)"
+
+#: lib/structure/post.php:1008
+msgid "Current page"
+msgstr "Trang hiện tại"
+
+#: lib/structure/post.php:547
+msgid "Page "
+msgstr "Trang"
+
+#: lib/structure/header.php:931
+msgid "Skip to footer"
+msgstr "Bỏ qua footer"
+
+#: lib/structure/header.php:925
+msgid "Skip to secondary sidebar"
+msgstr "Bỏ qua secondary sidebar"
+
+#: lib/structure/header.php:921
+msgid "Skip to primary sidebar"
+msgstr "Bỏ qua primary sidebar"
+
+#: lib/structure/header.php:915
+msgid "Skip to primary navigation"
+msgstr "Bỏ qua primary navigation"
+
+#: lib/functions/widgetize.php:220
+msgid "Widgets in this widget area will display after single entries."
+msgstr "Các widgets ở trong widget này sẽ hiển thị sau nội dung mỗi bài viết."
+
+#: lib/functions/widgetize.php:219
+msgid "After Entry"
+msgstr "Sau bài viết"

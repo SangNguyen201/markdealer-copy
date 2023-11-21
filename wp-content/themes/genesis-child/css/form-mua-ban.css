@@ -1,0 +1,377 @@
+:root {
+   --cl-ff: #FFF;
+   --cl-ff-05: rgba(255, 255, 255, 0.5);
+   --cl-ed: #ededed;
+   --cl-d3: #d3d3d3;
+   --cl-95: #959595;
+   --cl-42: #424242;
+   --cl-21: #212121;
+   --cl-13: #0d0d0d;
+   --cl-00: #000;
+   --cl-00-01: rgba(0, 0, 0, 0.1);
+   --cl-00-03: rgba(0, 0, 0, 0.3);
+   --cl-00-08: rgba(0, 0, 0, 0.8);
+   --cl-main: #416ee8;
+   --cl-highlight: #5840ba;
+   --cl-nen: #e9efff;
+   --cl-gia: #237804;
+   --cl-dat-mua: #52c41a;
+}
+
+/* Chung */
+
+.form-dien-thong-tin.flex {
+   display: none;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   padding: 15px;
+   background-color: var(--cl-00-08);
+   color: var(--cl-95);
+   z-index: 13;
+}
+
+.form-dien-thong-tin.flex.show {
+   display: flex;
+}
+
+.form-dien-thong-tin>div {
+   position: relative;
+   width: 380px;
+   max-width: 100%;
+   max-height: 100%;
+   overflow-y: scroll;
+   padding: 15px;
+   background-color: var(--cl-ff);
+}
+
+.form-dien-thong-tin>div::-webkit-scrollbar {
+   width: 4px;
+   background-color: transparent;
+}
+
+.form-dien-thong-tin>div::-webkit-scrollbar-thumb {
+   background-color: var(--cl-95);
+}
+
+.form-dien-thong-tin>div>div {
+   margin-bottom: 0;
+}
+
+/* Input + Textarea */
+
+.form-dien-thong-tin p,
+.form-dien-thong-tin .dong-y {
+   padding: 5px 0;
+}
+
+.form-dien-thong-tin input:not(.form-dien-thong-tin input[type="checkbox"]):not(.form-dien-thong-tin input[type="submit"]):not(.form-dien-thong-tin input[type="button"]),
+.form-dien-thong-tin textarea {
+   width: 100%;
+   max-width: 100%;
+   padding: 5px;
+   background-color: var(--cl-ff);
+   border-top: 0;
+   border-right: 0;
+   border-bottom: 1px solid var(--cl-d3);
+   border-left: 0;
+   font-size: 14px;
+}
+
+
+.form-dien-thong-tin input:not(.form-dien-thong-tin input[type="checkbox"]):not(.form-dien-thong-tin input[type="submit"]):hover,
+.form-dien-thong-tin input:not(.form-dien-thong-tin input[type="checkbox"]):not(.form-dien-thong-tin input[type="submit"]):focus,
+.form-dien-thong-tin textarea:hover,
+.form-dien-thong-tin textarea:focus {
+   background-color: var(--cl-nen);
+   border-bottom: 1px solid var(--cl-nen);
+   color: var(--cl-00);
+}
+
+.form-dien-thong-tin label {
+   color: var(--cl-95);
+   font-size: 14px !important;
+}
+
+.form-dien-thong-tin input:not(.form-dien-thong-tin input[type="checkbox"]):not(.form-dien-thong-tin input[type="submit"]) {
+   height: 30px;
+}
+
+.form-dien-thong-tin textarea {
+   height: 80px;
+   max-height: 300px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-dien-thong-tin a {
+   color: var(--cl-main);
+}
+
+.form-dien-thong-tin button {
+   border: 0;
+}
+
+/* Upload */
+
+.form-dien-thong-tin .codedropz-upload-container {
+   padding: 0px 20px;
+}
+
+.form-dien-thong-tin .codedropz-upload-inner {
+   padding: 15px 0
+}
+
+.form-dien-thong-tin .codedropz-upload-handler {
+   width: 100%;
+   margin-bottom: 0;
+}
+
+.form-dien-thong-tin .wpcf7-list-item {
+   margin: 0
+}
+
+.form-dien-thong-tin a.cd-upload-btn {
+   display: inline-block;
+   margin-top: 4px;
+   padding: 1px 3px;
+   background-color: var(--cl-main);
+   border: 2px solid var(--cl-main);
+   color: var(--cl-ff);
+   font-size: 14px;
+}
+
+.form-dien-thong-tin a.cd-upload-btn:hover {
+   background-color: var(--cl-ff);
+   color: var(--cl-main);
+}
+
+.form-dien-thong-tin .dnd-upload-status .dnd-upload-image {
+   width: 30px;
+   height: 30px;
+}
+
+.form-dien-thong-tin .dnd-upload-status .dnd-upload-image span.file {
+   width: 12px;
+   height: 16px;
+}
+
+.form-dien-thong-tin .dnd-upload-status .dnd-upload-details .name span,
+.form-dien-thong-tin .dnd-upload-status .dnd-upload-details .name em,
+.form-dien-thong-tin .dnd-upload-status .dnd-upload-details span.has-error {
+   font-size: 12px;
+}
+
+.form-dien-thong-tin .dnd-upload-status .dnd-upload-details .dnd-progress-bar {
+   height: 10px;
+}
+
+.form-dien-thong-tin .dnd-upload-status .dnd-upload-details .dnd-progress-bar span {
+   padding-right: 0px;
+   font-size: 8px;
+   line-height: 12px;
+}
+
+/* Chap nhan dieu khoan */
+
+.form-dien-thong-tin .dong-y span {
+   color: var(--cl-00);
+}
+
+/* Tips */
+
+.form-dien-thong-tin .wpcf7-not-valid-tip {
+   font-size: 12px;
+}
+
+.form-dien-thong-tin .has-error {
+   display: block;
+   margin-top: 5px;
+}
+
+.form-dien-thong-tin .wpcf7-form .wpcf7-response-output {
+   margin: 15px 0;
+   padding: 5px 10px;
+   background-color: red;
+   border: 0;
+   color: var(--cl-ff);
+   font-size: 16px;
+   text-align: center;
+}
+
+.form-dien-thong-tin .wpcf7-form.sent .wpcf7-response-output {
+   background-color: var(--cl-dat-mua);
+}
+
+/* Gui */
+
+.form-dien-thong-tin .gui[disabled] {
+   background-color: #ccc;
+   color: var(--cl-00);
+}
+
+.form-dien-thong-tin .gui {
+   display: block;
+   padding: 7px 16px;
+   background-color: var(--cl-highlight);
+   border: 0;
+   border-radius: 0%;
+   color: var(--cl-ff);
+   font-size: 15px;
+   font-weight: 400;
+   order: 1;
+}
+
+/* Close Form */
+
+.form-dien-thong-tin .nut-hanh-dong p {
+   column-gap: 10px;
+}
+
+.form-dien-thong-tin .close-form {
+   padding: 3px 8px;
+   background-color: var(--cl-42);
+   color: var(--cl-ff);
+   font-size: 15px;
+   vertical-align: middle;
+   cursor: pointer;
+}
+
+.form-dien-thong-tin .wpforms-confirmation-container-full .form-close {
+   margin-top: 15px;
+   text-align: center;
+}
+
+.form-dien-thong-tin .form-close .close-form {
+   margin-left: 0;
+}
+
+.form-dien-thong-tin .close-form {
+   order: 2;
+}
+
+/* Loading */
+
+.form-dien-thong-tin .wpcf7-spinner {
+   margin: 0;
+   order: 3;
+}
+
+/* Form Dat mua */
+
+#dat-mua.form-dien-thong-tin .loop-product {
+   column-gap: 5px;
+   width: 100%;
+   max-width: 100%;
+   margin-bottom: 10px;
+   padding: 5px;
+   border: thin solid var(--cl-95);
+}
+
+#dat-mua.form-dien-thong-tin .ttsp-an {
+   display: none;
+}
+
+#dat-mua.form-dien-thong-tin .loop-product .text {
+   width: calc(100% - 75px - 5px);
+}
+
+#dat-mua.form-dien-thong-tin .loop-product h3 {
+   font-size: 16px;
+}
+
+#dat-mua.form-dien-thong-tin .loop-product .hinh-thuc {
+   margin: 4px 0;
+}
+
+#dat-mua.form-dien-thong-tin .loop-product .hinh-thuc a {
+   font-size: 12px;
+   line-height: 1;
+   padding: 4px;
+}
+
+#dat-mua.form-dien-thong-tin .loop-product .hinh-thuc .ban-dut {
+   background-color: transparent;
+   border: thin solid red;
+   color: red;
+}
+
+#dat-mua.form-dien-thong-tin .loop-product .hinh-thuc .nhuong-quyen {
+   background-color: transparent;
+   border: thin solid #0000cd;
+   color: #0000cd;
+}
+
+#dat-mua.form-dien-thong-tin .loop-product .del.price {
+   font-size: 14px !important;
+   text-decoration: line-through;
+}
+
+/* DANG BAN - DAT MUA Thanh cong */
+
+.form-dien-thong-tin form .dang-ban,
+.form-dien-thong-tin form .dat-mua {
+   max-height: 1000px;
+   overflow: hidden;
+   opacity: 1;
+}
+
+.form-dien-thong-tin form.sent .dang-ban,
+.form-dien-thong-tin form.sent .dat-mua {
+   max-height: 0px;
+   opacity: 0;
+}
+
+/* Dong */
+
+.form-dien-thong-tin form .dong {
+   height: 0px;
+   overflow: hidden;
+   text-align: center;
+}
+
+.form-dien-thong-tin form.sent .dong {
+   height: 30px;
+}
+
+.form-dien-thong-tin form .dong * {
+   padding: 7px;
+   color: var(--cl-ff);
+   font-size: 12px;
+   cursor: pointer;
+}
+
+/* Nut TIEP TUC */
+
+.form-dien-thong-tin form .dong .tiep-tuc {
+   background-color: limegreen;
+}
+
+/* Nut DONG-BT */
+
+.form-dien-thong-tin form .dong .dong-bt {
+   background-color: var(--cl-42);
+}
+
+/* Border radius */
+
+.form-dien-thong-tin>div,
+.form-dien-thong-tin a.cd-upload-btn,
+.form-dien-thong-tin .wpcf7-form.sent .wpcf7-response-output {
+   border-radius: 3px;
+}
+
+/* Transition */
+
+.form-dien-thong-tin input:not(.form-dien-thong-tin input[type="checkbox"]):not(.form-dien-thong-tin input[type="submit"]),
+.form-dien-thong-tin textarea,
+.form-dien-thong-tin a.cd-upload-btn {
+   transition: .2s ease-in-out;
+}
+
+.form-dien-thong-tin form .dang-ban,
+.form-dien-thong-tin form .dat-mua,
+.form-dien-thong-tin form .dong {
+   transition: .5s ease-in-out;
+}
