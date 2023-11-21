@@ -673,7 +673,7 @@ header.site-header .header .line {
    color: var(--cl-ff);
    font-size: 14px;
    text-transform: uppercase;
-}
+   }
 
 #dang-ban button:hover {
    background-color: var(--cl-highlight);

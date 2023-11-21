@@ -1072,3 +1072,15 @@ function dat_mua_sp() {
       })(jQuery);
    </script>
 <?php wp_die();}
+
+// Thêm mã JS và truyền giá trị từ PHP sang JS
+function um_custom_enqueue_scripts() {
+   // Chèn mã JS vào trang web
+   wp_enqueue_script('dat-mua', get_template_directory_uri() . '/wp-content/themes/genesis-child/js/dat-mua.js', array('jquery'), null, true);
+
+   // Truyền giá trị từ PHP sang JS
+   wp_localize_script('dat-mua', 'umCustomVars', array(
+       'isLoggedIn' => is_user_logged_in(),
+   ));
+}
+add_action('wp_enqueue_scripts', 'um_custom_enqueue_scripts');
