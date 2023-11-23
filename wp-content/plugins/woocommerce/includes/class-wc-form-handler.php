@@ -1086,19 +1086,22 @@ class WC_Form_Handler {
 	 * @throws Exception On registration error.
 	 */
 	public static function process_registration() {
-		$nonce_value = isset( $_POST['_wpnonce'] ) ? wp_unslash( $_POST['_wpnonce'] ) : ''; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
-		$nonce_value = isset( $_POST['woocommerce-register-nonce'] ) ? wp_unslash( $_POST['woocommerce-register-nonce'] ) : $nonce_value; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
-
+		$nonce_value = isset( $_POST['_wpnonce'] ) ? wp_unslash( $_POST['_wpnonce'] ) : '';
+		$nonce_value = isset( $_POST['woocommerce-register-nonce'] ) ? wp_unslash( $_POST['woocommerce-register-nonce'] ) : $nonce_value;
+	
 		if ( isset( $_POST['register'], $_POST['email'] ) && wp_verify_nonce( $nonce_value, 'woocommerce-register' ) ) {
-			$username = 'no' === get_option( 'woocommerce_registration_generate_username' ) && isset( $_POST['username'] ) ? wp_unslash( $_POST['username'] ) : ''; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
-			$password = 'no' === get_option( 'woocommerce_registration_generate_password' ) && isset( $_POST['password'] ) ? $_POST['password'] : ''; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized, WordPress.Security.ValidatedSanitizedInput.MissingUnslash
-			$email    = wp_unslash( $_POST['email'] ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
-
+			$username = 'no' === get_option( 'woocommerce_registration_generate_username' ) && isset( $_POST['username'] ) ? wp_unslash( $_POST['username'] ) : '';
+			$password = 'no' === get_option( 'woocommerce_registration_generate_password' ) && isset( $_POST['password'] ) ? $_POST['password'] : '';
+			$email    = wp_unslash( $_POST['email'] );
+	
+			// Get phone number from registration form
+			$phone_number = isset( $_POST['phone_number'] ) ? wc_clean( $_POST['phone_number'] ) : '';
+	
 			try {
 				$validation_error  = new WP_Error();
 				$validation_error  = apply_filters( 'woocommerce_process_registration_errors', $validation_error, $username, $password, $email );
 				$validation_errors = $validation_error->get_error_messages();
-
+	
 				if ( 1 === count( $validation_errors ) ) {
 					throw new Exception( $validation_error->get_error_message() );
 				} elseif ( $validation_errors ) {
@@ -1107,32 +1110,30 @@ class WC_Form_Handler {
 					}
 					throw new Exception();
 				}
-
+	
 				$new_customer = wc_create_new_customer( sanitize_email( $email ), wc_clean( $username ), $password );
-
+	
 				if ( is_wp_error( $new_customer ) ) {
 					throw new Exception( $new_customer->get_error_message() );
 				}
-
+	
+				// Save phone number to user meta
+				if ( $phone_number ) {
+					update_user_meta( $new_customer, 'phone_number', $phone_number );
+				}
+	
 				if ( 'yes' === get_option( 'woocommerce_registration_generate_password' ) ) {
 					wc_add_notice( __( 'Your account was created successfully and a password has been sent to your email address.', 'woocommerce' ) );
 				} else {
 					wc_add_notice( __( 'Your account was created successfully. Your login details have been sent to your email address.', 'woocommerce' ) );
 				}
-
-				// Only redirect after a forced login - otherwise output a success notice.
+	
 				if ( apply_filters( 'woocommerce_registration_auth_new_customer', true, $new_customer ) ) {
 					wc_set_customer_auth_cookie( $new_customer );
-
-					if ( ! empty( $_POST['redirect'] ) ) {
-						$redirect = wp_sanitize_redirect( wp_unslash( $_POST['redirect'] ) ); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
-					} elseif ( wc_get_raw_referer() ) {
-						$redirect = wc_get_raw_referer();
-					} else {
-						$redirect = wc_get_page_permalink( 'myaccount' );
-					}
-
-					wp_redirect( wp_validate_redirect( apply_filters( 'woocommerce_registration_redirect', $redirect ), wc_get_page_permalink( 'myaccount' ) ) ); //phpcs:ignore WordPress.Security.SafeRedirect.wp_redirect_wp_redirect
+	
+					$redirect = ! empty( $_POST['redirect'] ) ? wp_sanitize_redirect( wp_unslash( $_POST['redirect'] ) ) : ( wc_get_raw_referer() ? wc_get_raw_referer() : wc_get_page_permalink( 'myaccount' ) );
+	
+					wp_redirect( wp_validate_redirect( apply_filters( 'woocommerce_registration_redirect', $redirect ), wc_get_page_permalink( 'myaccount' ) ) );
 					exit;
 				}
 			} catch ( Exception $e ) {
@@ -1142,6 +1143,7 @@ class WC_Form_Handler {
 			}
 		}
 	}
+	
 }
 
 WC_Form_Handler::init();

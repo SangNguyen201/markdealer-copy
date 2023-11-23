@@ -192,9 +192,7 @@ textarea {
    margin: 0;
    padding: 1px 2px;
    text-indent: 0px;
-   appearance: unset;
-   writing-mode: unset;
-   border-radius: 0px;
+      border-radius: 0px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -724,7 +722,6 @@ header.site-header .header .line {
    #form-search {
       max-width: calc(100% - 130px);
       padding-left: 10px;
-      border-left: thin solid var(--cl-ff);
    }
 }
 
@@ -2493,4 +2490,7 @@ body.single .entry-content p a {
 }
 figure .wp-block-image .aligncenter {
 	display: flex !important;
+}
+#wcfm_menu .wcfm_menu_items a:hover span{
+   color: #fff !important;
 }

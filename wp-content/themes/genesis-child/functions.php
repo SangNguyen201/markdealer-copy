@@ -564,13 +564,6 @@ function style_in_start_body(){ ?>
    <div class="box-search">
       <div class="container">
          <div class="flex align-items_center justify-content_space-between flex_wrap">
-            <!-- Button DANG BAN -->
-            <div id="dang-ban">
-               <button title="Đăng bán" alt="Đăng bán">
-                  Đăng bán
-                  <span class="dashicons dashicons-insert"></span>
-               </button>
-            </div>
             <!-- Form search -->
             <form id="form-search" class="flex align-items_center justify-content_space-between flex_wrap" action="<?php echo home_url('/'.get_post(22)->post_name);?>">
                <div class="col">
@@ -615,6 +608,13 @@ function style_in_start_body(){ ?>
                   <input type="submit" value="Tìm kiếm">
                </div>
             </form>
+              <!-- Button DANG BAN -->
+              <div id="dang-ban">
+               <button title="Đăng bán" alt="Đăng bán">
+                  Đăng bán
+                  <span class="dashicons dashicons-insert"></span>
+               </button>
+            </div>
          </div>
       </div>
    </div>
@@ -755,17 +755,18 @@ function in_footer(){ ?>
    </div>
 
    <!-- Form DANG KY BAN -->
-   <div id="dang-ky-ban" class="form-dien-thong-tin flex align-items_center justify-content_center">
-      <div>
+   <div id="dang-ky-ban" class="flex align-items_center justify-content_center">
+      <!-- <div>
          <?php echo do_shortcode('[contact-form-7 id="290" title="Đăng bán"]');?>
-      </div>
+      </div>  -->
+
    </div>
 
    <!-- Form DAT MUA -->
    <div id="dat-mua" class="form-dien-thong-tin flex align-items_center justify-content_center">
-      <div>
+      <!-- <div>
          <?php echo do_shortcode('[contact-form-7 id="294" title="Đặt mua"]');?>
-      </div>
+      </div> -->
    </div>
 
    <!-- Back to top -->
@@ -1072,15 +1073,130 @@ function dat_mua_sp() {
       })(jQuery);
    </script>
 <?php wp_die();}
-
-// Thêm mã JS và truyền giá trị từ PHP sang JS
+// Chèn mã JS vào trang web
 function um_custom_enqueue_scripts() {
-   // Chèn mã JS vào trang web
-   wp_enqueue_script('dat-mua', get_template_directory_uri() . '/wp-content/themes/genesis-child/js/dat-mua.js', array('jquery'), null, true);
+   wp_register_script('dat-mua-sp', get_stylesheet_directory_uri() . '/js/dat-mua.js', false, '1.0.0', true);
+   wp_enqueue_script('dat-mua-sp');
 
    // Truyền giá trị từ PHP sang JS
-   wp_localize_script('dat-mua', 'umCustomVars', array(
+   wp_localize_script('dat-mua-sp', 'umCustomVars', array(
        'isLoggedIn' => is_user_logged_in(),
    ));
 }
 add_action('wp_enqueue_scripts', 'um_custom_enqueue_scripts');
+// tạo shortcode form đăng nhập
+function custom_woocommerce_login_form_shortcode() {
+   ob_start();
+
+   if ( 'yes' === get_option( 'woocommerce_enable_myaccount_registration' ) ) :
+       ?>
+       <div class="u-columns col2-set" id="customer_login">
+           <div class="u-column1 col-1">
+               <h2><?php esc_html_e( 'Login', 'woocommerce' ); ?></h2>
+               <form class="woocommerce-form woocommerce-form-login login" method="post">
+
+                   <?php do_action( 'woocommerce_login_form_start' ); ?>
+
+                   <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                       <label for="username"><?php esc_html_e( 'Username or email address', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
+                       <input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( wp_unslash( $_POST['username'] ) ) : ''; ?>" />
+                   </p>
+                   <p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+                       <label for="password"><?php esc_html_e( 'Password', 'woocommerce' ); ?>&nbsp;<span class="required">*</span></label>
+                       <input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
+                   </p>
+
+                   <?php do_action( 'woocommerce_login_form' ); ?>
+
+                   <p class="form-row">
+                       <label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
+                           <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'woocommerce' ); ?></span>
+                       </label>
+                       <?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
+                       <button type="submit" class="woocommerce-button button woocommerce-form-login__submit<?php echo esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ); ?>" name="login" value="<?php esc_attr_e( 'Log in', 'woocommerce' ); ?>"><?php esc_html_e( 'Log in', 'woocommerce' ); ?></button>
+                   </p>
+                   <p class="woocommerce-LostPassword lost_password">
+                       <a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Lost your password?', 'woocommerce' ); ?></a>
+                   </p>
+
+                   <?php do_action( 'woocommerce_login_form_end' ); ?>
+
+               </form>
+           </div>
+       </div>
+   <?php endif;
+
+   return ob_get_clean();
+}
+add_shortcode( 'custom_login_form', 'custom_woocommerce_login_form_shortcode' );
+//chuyển hướng trang
+function redirect_user() {
+   if ( is_user_logged_in() ) {
+       wp_redirect( 'http://localhost/markdealer-copy/quan-ly-cua-hang' );
+       exit();
+   } else {
+       wp_redirect( 'http://localhost/markdealer-copy/dang-nhap' );
+       exit();
+   }
+}
+add_action( 'init', 'redirect_user' );
+
+
+// thêm trường sdt
+function add_register_form_field(){
+   woocommerce_form_field(
+       'phone_number',
+       array(
+           'type'        => 'text',  // Sử dụng 'text' thay vì 'number'
+           'required'    => true, 
+           'label'       => 'Số điện thoại',
+       ),
+       ( isset($_POST['phone_number']) ? $_POST['phone_number'] : '' )
+   );
+}
+add_action( 'woocommerce_register_form', 'add_register_form_field' );
+//lưu trường sdt
+function save_register_fields( $customer_id ){
+   if ( isset( $_POST['phone_number'] ) ) {
+       update_user_meta( $customer_id, 'phone_number', wc_clean( $_POST['phone_number'] ) );
+   }
+}
+add_action( 'woocommerce_created_customer', 'save_register_fields' );
+// kiểm tra sdt
+function validate_fields( $validation_errors, $username, $password, $email ) {
+   if ( empty( $_POST['phone_number'] ) ) {
+       $validation_errors->add( 'phone_number_error', 'Vui lòng nhập số điện thoại.' );
+   }
+
+   return $validation_errors;
+}
+add_filter( 'woocommerce_process_registration_errors', 'validate_fields', 10, 4 );
+
+// Thêm trường số điện thoại vào trang quản lý khách hàng
+function add_phone_number_column($columns) {
+   $columns['phone_number'] = 'Số điện thoại';
+   return $columns;
+}
+add_filter('manage_users_columns', 'add_phone_number_column');
+
+function display_phone_number_column_content($value, $column_name, $user_id) {
+   if ('phone_number' == $column_name) {
+       return get_user_meta($user_id, 'phone_number', true);
+   }
+   return $value;
+}
+add_action('manage_users_custom_column', 'display_phone_number_column_content', 10, 3);
+
+function make_phone_number_column_sortable($columns) {
+   $columns['phone_number'] = 'phone_number';
+   return $columns;
+}
+add_filter('manage_users_sortable_columns', 'make_phone_number_column_sortable');
+
+
+
+
+
+
+
+

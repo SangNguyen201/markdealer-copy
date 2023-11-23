@@ -1,17 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-   const dangBanButton = document.getElementById('dang-ban');
 
+document.addEventListener('DOMContentLoaded', function() {
    // Kiểm tra xem người dùng đã đăng nhập hay chưa
    var isLoggedIn = umCustomVars.isLoggedIn;
 
-   // Ẩn hoặc hiển thị nút button tùy thuộc vào trạng thái đăng nhập của người dùng
-   if (isLoggedIn) {
-       dangBanButton.style.display = 'block';
-   } else {
-      dangBanButton.style.display = 'none';
-   }
+   var dangBanButton = document.getElementById('dang-ban');
+   dangBanButton.addEventListener('click', function() {
+       if (isLoggedIn) {
+           window.location.href = 'http://localhost/markdealer-copy/quan-ly-cua-hang';
+       } else {
+          window.location.href = 'http://localhost/markdealer-copy/dang-nhap';
+       }
+   });
 });
-
 
 (function($) {
    $(document).ready(function() {
